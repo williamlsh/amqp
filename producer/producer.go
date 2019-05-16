@@ -48,7 +48,7 @@ func Publish(amqpURI, exchange, exchangeType, routingKey string, body []byte, re
 		defer confirmOne(confirms)
 	}
 
-	log.Printf("Declared exchange, publishing %dB body (%s)", len(string(body)), body)
+	log.Printf("Declared exchange, publishing %dB body", len(string(body)))
 	err = ch.Publish(
 		exchange,   // publish to an existing exchange
 		routingKey, // routing to 0 or more queues
