@@ -116,7 +116,7 @@ func (c *consumer) Consume(amqpURI, exchange, exchangeType, queueName, bindingKe
 		false, // global
 	)
 
-	log.Printf("Channel QoS is set, starting consumer (consumer tag %q)", c.tag)
+	log.Printf("Channel QoS is set up, starting consumer (consumer tag %q)", c.tag)
 	deliveries, err := c.channel.Consume(
 		queue.Name, // name
 		c.tag,      // consumerTag,
