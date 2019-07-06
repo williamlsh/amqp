@@ -1,6 +1,6 @@
 # AMQP
 
-RabbitMQ user-friendly interface.
+RabbitMQ user-friendly interfaces.
 
 ## Description
 
@@ -22,7 +22,7 @@ go run . -amqpURI="[AMQP_URI]" \
 Run amqp consumer:
 
 ```bash
-go run -amqpURI="[AMQP_URI]" \
+go run . -amqpURI="[AMQP_URI]" \
   -exchange="exchange_test" \
   -exchangeType="topic" \
   -bindingKey="test"
