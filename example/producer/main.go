@@ -1,7 +1,7 @@
 package main
 
 import (
-	"amqp/producer"
+	"github.com/williamlsh/amqp/producer"
 	"flag"
 	"log"
 	"time"

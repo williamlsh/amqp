@@ -1,7 +1,7 @@
 package main
 
 import (
-	"amqp/consumer"
+	"github.com/williamlsh/amqp/consumer"
 	"flag"
 	"log"
 )
